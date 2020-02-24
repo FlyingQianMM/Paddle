@@ -60,6 +60,7 @@ NEED_TO_FIX_OP_LIST = [
     'matmul',
     'mul',
     'multiplex',
+    'prelu',
     'rank_loss',
     'row_conv',
     'sequence_conv',

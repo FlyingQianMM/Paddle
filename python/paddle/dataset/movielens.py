@@ -224,7 +224,7 @@ def max_job_id():
 
 def movie_categories():
     """
-    Get movie categories dictionary.
+    Get movie categoriges dictionary.
     """
     __initialize_meta_info__()
     return CATEGORIES_DICT

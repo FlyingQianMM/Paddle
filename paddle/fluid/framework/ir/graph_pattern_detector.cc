@@ -131,7 +131,7 @@ bool GraphPatternDetector::MarkPDNodesInGraph(const ir::Graph &graph) {
 }
 
 // The intermediate Nodes can only link to the nodes inside the pattern, or this
-// subgraph will be dropped.
+// subgraph will be droped.
 void GraphPatternDetector::ValidateByNodeRole(
     std::vector<GraphPatternDetector::subgraph_t> *subgraphs) {
   std::vector<GraphPatternDetector::subgraph_t> result;

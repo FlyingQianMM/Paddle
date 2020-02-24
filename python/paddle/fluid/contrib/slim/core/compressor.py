@@ -302,7 +302,7 @@ class Compressor(object):
                                  this optimizer is used to minimize the combined loss of student-net and
                                  teacher-net while train_optimizer is used to minimize loss of
                                  student-net in fine-tune stage. 
-            search_space(slim.nas.SearchSpace): The instance that define the searching space. It must inherit
+            search_space(slim.nas.SearchSpace): The instance that define the searching space. It must inherite
                               slim.nas.SearchSpace class and overwrite the abstract methods.
             log_period(int): The period of print log of training.
 
@@ -551,7 +551,7 @@ class Compressor(object):
 
     def run(self):
         """
-        Execute compressing pass.
+        Execute compressiong pass.
         """
         context = Context(
             place=self.place,

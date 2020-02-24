@@ -32,7 +32,6 @@ using paddle::operators::distributed::AsyncCommunicator;
 using paddle::operators::distributed::Communicator;
 using paddle::operators::distributed::GeoSgdCommunicator;
 using paddle::operators::distributed::HalfAsyncCommunicator;
-using paddle::operators::distributed::SyncCommunicator;
 
 namespace paddle {
 namespace pybind {
@@ -53,9 +52,6 @@ void BindCommunicator(py::module* m) {
         } else if (mode == "GEO") {
           Communicator::InitInstance<GeoSgdCommunicator>(program, param_scope,
                                                          envs);
-        } else if (mode == "SYNC") {
-          Communicator::InitInstance<SyncCommunicator>(program, param_scope,
-                                                       envs);
         } else {
           PADDLE_THROW(platform::errors::InvalidArgument(
               "unsuported communicator MODE"));

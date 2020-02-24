@@ -19,7 +19,7 @@ class PSDispatcher(object):
     """
     PSDispatcher is the base class for dispatching vars
     into different pserver instance.
-    You need to implement the `dispatch` interface.
+    You need to implement the `dispatch` inferface.
     """
 
     def __init__(self, pserver_endpoints):
@@ -88,7 +88,7 @@ class HashName(PSDispatcher):
 
 class RoundRobin(PSDispatcher):
     """
-    Distribute variables to several endpoints using
+    Distribute variables to serveral endpoints using
     RondRobin<https://en.wikipedia.org/wiki/Round-robin_scheduling> method.
 
     Args:

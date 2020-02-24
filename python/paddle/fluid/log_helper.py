@@ -31,7 +31,7 @@ def get_logger(name, level, fmt=None):
         fmt (str): Format of logger output
 
     Returns:
-        logging.Logger: logging logger with given settings
+        logging.Logger: logging logger with given setttings
 
     Examples:
         .. code-block:: python

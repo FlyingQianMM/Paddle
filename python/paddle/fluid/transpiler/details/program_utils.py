@@ -98,7 +98,7 @@ def op_to_code(op, skip_op_callstack=True):
         op: A fluid operator.
 
     Returns:
-        string: The formatted string.
+        string: The foramtted string.
     """
 
     outputs_str = "{"

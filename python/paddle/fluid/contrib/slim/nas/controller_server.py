@@ -27,7 +27,7 @@ _logger = get_logger(
 
 class ControllerServer(object):
     """
-    The controller wrapper with a socket server to handle the request of search agent.
+    The controller wrapper with a socket server to handle the request of search agentt.
     """
 
     def __init__(self,

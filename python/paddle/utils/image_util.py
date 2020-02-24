@@ -98,7 +98,7 @@ def preprocess_img(im, img_mean, crop_size, is_train, color=True):
     Does data augmentation for images.
     If is_train is false, cropping the center region from the image.
     If is_train is true, randomly crop a region from the image,
-    and random does flipping.
+    and randomy does flipping.
     im: (K x H x W) ndarrays
     """
     im = im.astype('float32')
